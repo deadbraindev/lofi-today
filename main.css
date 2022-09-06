@@ -1,0 +1,158 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "VCR-font", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+/* BOX */
+
+.box {
+    height: 200vh;
+    width: 100%;
+}
+
+.box-video {
+    height: 100%;
+    width: 39%;
+    position: fixed;
+    left: -20px;
+    transition: left 0.324s;
+}
+.box-video:hover,
+.box-video:active {
+    left: 0px;
+}
+
+#video-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.box-content {
+    float: right;
+    width: 62%;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+header {
+    height: 0vh;
+    color: aqua;
+    /* background-color: bisque; */
+}
+
+/* brak tego gowna przy przeciaganiu chyba*/
+.link-video:hover,
+.link-video:active {
+    opacity: 100%;
+}
+
+.text-shadow {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0),
+        1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0), 0px 2px 0 rgb(0, 0, 0),
+        0px -2px 0 rgb(0, 0, 0), 2px 0px 0 rgb(0, 0, 0), -2px 0px 0 rgb(0, 0, 0),
+        2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0),
+        -2px -2px 0 rgb(0, 0, 0), 0px 3px 0 rgb(0, 0, 0),
+        0px -3px 0 rgb(0, 0, 0), 3px 0px 0 rgb(0, 0, 0), -3px 0px 0 rgb(0, 0, 0),
+        3px 3px 0 rgb(0, 0, 0), 3px -3px 0 rgb(0, 0, 0), -3px 3px 0 rgb(0, 0, 0),
+        -3px -3px 0 rgb(0, 0, 0);
+    -webkit-text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0),
+        1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0), 0px 2px 0 rgb(0, 0, 0),
+        0px -2px 0 rgb(0, 0, 0), 2px 0px 0 rgb(0, 0, 0), -2px 0px 0 rgb(0, 0, 0),
+        2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0),
+        -2px -2px 0 rgb(0, 0, 0), 0px 3px 0 rgb(0, 0, 0),
+        0px -3px 0 rgb(0, 0, 0), 3px 0px 0 rgb(0, 0, 0), -3px 0px 0 rgb(0, 0, 0),
+        3px 3px 0 rgb(0, 0, 0), 3px -3px 0 rgb(0, 0, 0), -3px 3px 0 rgb(0, 0, 0),
+        -3px -3px 0 rgb(0, 0, 0);
+    -moz-text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0),
+        1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0), 0px 2px 0 rgb(0, 0, 0),
+        0px -2px 0 rgb(0, 0, 0), 2px 0px 0 rgb(0, 0, 0), -2px 0px 0 rgb(0, 0, 0),
+        2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0),
+        -2px -2px 0 rgb(0, 0, 0), 0px 3px 0 rgb(0, 0, 0),
+        0px -3px 0 rgb(0, 0, 0), 3px 0px 0 rgb(0, 0, 0), -3px 0px 0 rgb(0, 0, 0),
+        3px 3px 0 rgb(0, 0, 0), 3px -3px 0 rgb(0, 0, 0), -3px 3px 0 rgb(0, 0, 0),
+        -3px -3px 0 rgb(0, 0, 0);
+
+    font-size: 40px;
+}
+
+.text {
+    margin: 100px;
+    padding: 30px;
+    height: 90%;
+    border: 2px solid black;
+}
+
+.video-arrow {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+}
+
+.logo {
+    position: fixed;
+    top: 3%;
+    left: 42%;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "VCR-font";
+    src: url("fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf");
+}
+
+/* ANIMATIONS */
+
+/* @keyframes blinker {
+    30% {
+      opacity: 0;
+    }
+} */
+
+/* MEDIA */
+
+/* @media (min-width: 500px) {
+    * {
+        background-color: red;
+    }
+} */
+
+.rotate {
+    transform: rotate(-90deg);
+    z-index: 100;
+    float: left;
+    /* margin-bottom: 20px; */
+}
+
+.test {
+    float: left;
+    padding-left: 20px;
+}
