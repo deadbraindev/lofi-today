@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;800&display=swap');
+
 /* RESET CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "VCR-font", Arial, sans-serif;
+    font-family: 'Azeret Mono', monospace;
+
 }
 
 a {
@@ -31,14 +34,15 @@ h5 {
 
 .box-video {
     height: 100%;
-    width: 39%;
+    width: 60%;
     position: fixed;
-    left: -20px;
-    transition: left 0.324s;
+    /* left: -20px; */
+    transform: translateX(-35%);
+    transition:  all 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000)
 }
 .box-video:hover,
 .box-video:active {
-    left: 0px;
+    transform: translateX(-31%);
 }
 
 #video-content {
@@ -56,9 +60,14 @@ h5 {
 }
 
 header {
-    height: 0vh;
-    color: aqua;
+    height: 60px;
+    /* color: aqua; */
     /* background-color: bisque; */
+    /* background-color: red; */
+    position: fixed;
+    top: 3%;
+    left: 42%;
+    width: 100%;
 }
 
 /* brak tego gowna przy przeciaganiu chyba*/
@@ -107,19 +116,20 @@ header {
     margin: 100px;
     padding: 30px;
     height: 90%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .video-arrow {
     position: absolute;
     top: 50%;
     right: 2%;
+    font-family: "VCR-font", Arial, sans-serif;
 }
 
 .logo {
-    position: fixed;
     top: 3%;
     left: 42%;
+    font-family: "VCR-font", Arial, sans-serif;
 }
 
 /* FONTS */
@@ -156,3 +166,40 @@ header {
     float: left;
     padding-left: 20px;
 }
+
+
+.footerCopyright {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 40px 0 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+  }
+  .footerCopyright span {
+    /* background-color: var(--color-background-dot-light); */
+    background-color: white;
+  }
+  .footerSocialLink {
+    text-decoration: none;
+    /* font-style:italic; */
+    color: var(--color-main-font-dark);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform:lowercase;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    background-color: #ffce06;
+    font-size: 1em;
+    padding: 2px;
+    /* margin: 3px; */
+  }
+  .footerSocialLink:hover {
+    border: 1px solid black;
+  }
+  /* .footerSocialLink:focus {
+    outline: 3px solid var(--color-main-focus-blue);
+    color: var(--color-main-focus-blue);
+    font-weight: bold;
+  } */
