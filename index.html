@@ -1,66 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="...">
-    <meta name="description" content="lofi tunes and vhs tapes">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="deadbrain.dev" />
 
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
+    <!-- <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> -->
+    <!-- <meta name="theme-color" content="#ffffff"> -->
 
+    <link rel="manifest" href="/manifest.json" />
 
-    <meta property="og:title" content="lofi.today radio 24/7">
-    <meta property="og:site_name" content="lofi.today">
-    <meta property="og:url" content="lofi.today">
-    <meta property="og:description" content="lofi tunes and vhs tapes">
-    <meta property="og:type" content="music.radio_station">
-    <meta property="og:image" content="images/lofi-today-OG-image.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Chill Session: Lofi and VHS Delight - lofi.today</title>
+    <link rel="canonical" href="https://lofi.today/" />
+    <meta
+      name="keywords"
+      content="Lofi Radio, VHS Vibes, Retro Music Stream, Chill Beats Live, Vintage Radio, Ambient VHS Sounds, Laid-back Music Channel, Nostalgic Beats, Cozy Radio Station, Analog Vibes, Relaxing VHS Tunes, Chillhop Broadcast, Old School Relaxation, 24/7 Lofi Beats, Vintage Aesthetics, Ambient VHS Visuals, Smooth Jazz on VHS, Tape Deck Sessions, Chilled Out Nostalgia, Retro Wave Radio"
+    />
+    <meta
+      name="description"
+      content="Discover the perfect blend of Lo-fi and VHS magic at lofi.today. Our live stream brings you continuous vintage beats, creating a cozy and relaxing atmosphere. Experience the charm of analog vibes and unwind with us today."
+    />
 
-    <title>lofi.today radio 24/7</title>
+    <!-- OpenGraph Card data -->
+    <meta
+      property="og:title"
+      content="lofi.today: Vintage Beats & VHS Vibes - 24/7 Relaxation"
+    />
+    <meta property="og:site_name" content="lofi.today" />
+    <meta property="og:url" content="lofi.today" />
+    <meta
+      property="og:description"
+      content="Dive into a world of nostalgia with lofi.today! Enjoy non-stop Lo-fi beats and mesmerizing VHS visuals. Unwind with our vintage-inspired ambiance. #LofiMusic #VHSVibes"
+    />
+    <meta property="og:type" content="music.radio_station" />
+    <meta
+      property="og:image"
+      content="https://lofi.today/images/lofitoday-og-default.jpg"
+    />
 
-    <link rel="stylesheet" href="main.css">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lofi_today" />
+    <meta
+      name="twitter:title"
+      content="lofi.today: Vintage Beats & VHS Vibes - 24/7 Relaxation"
+    />
+    <meta
+      name="twitter:description"
+      content="Dive into a world of nostalgia with lofi.today! Enjoy non-stop Lo-fi beats and mesmerizing VHS visuals. Unwind with our vintage-inspired ambiance. #LofiMusic #VHSVibes"
+    />
+    <meta
+      name="twitter:image"
+      content="https://lofi.today/images/lofitoday-og-default.jpg"
+    />
 
-</head>
-<body>
-
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo-dot" src="images/favicon.png" />
+      <a class="logo text-shadow" href="https://lofi.today/">lofi.today</a>
+    </header>
     <section class="box">
-       
-        <a class="link-video" href="https://www.youtube.com/channel/UCCao2pHfw0ZSua3VZKmthnw" target="_blank">
-            <div class="box-video" >
-                <video id="video-content" poster="images/poster-03.jpg" preload playsinline autoplay muted loop><source src="videos/video-001.mp4" type="video/mp4"></video>
-                <h1 class="video-arrow text-shadow">></h1>  
-                  
-            </div>
+      <div class="box-content">
+        <a
+          class="link-video"
+          href="https://www.youtube.com/channel/UCCao2pHfw0ZSua3VZKmthnw"
+          target="_blank"
+        >
+          <video
+            id="video-content"
+            poster="images/poster-03.jpg"
+            preload
+            playsinline
+            autoplay
+            muted
+            loop
+          >
+            <source src="videos/hero-video.mp4" type="video/mp4" />
+          </video>
         </a>
-
-        <header><a class="logo text-shadow" href="https://lofi.today/">lofi.today</a></header>
-        <div class="box-content">
-            
-            <section class="text">
-                <div class="rotate">&#9660</div><div class="test">work in progress...</div>
-            </br>
-            </br>
-            </br>
-            </br>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quaerat inventore corporis, nemo sed sit. Dolorum asperiores maiores nisi nostrum nobis eaque eius magnam. Aperiam incidunt dignissimos tempore officiis reiciendis enim aspernatur, sint fugit cumque ad facere unde natus ipsa possimus excepturi rem. Et enim assumenda nulla deleniti nesciunt ducimus alias ipsum provident beatae, dolorum ipsam dolore labore quibusdam inventore cum sit quod laborum maiores odio expedita a quo sapiente. Commodi provident odio libero. Consectetur illo veritatis repellendus iure ratione, magnam tempora, repellat alias natus esse aut. Hic, corporis rem ea eius blanditiis sequi suscipit vel obcaecati sunt est? Commodi.</div>
-                <img src="./images/firewire_2020-07-02 22-02-36.00_12_38_11.Still003.jpg" alt="">
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quaerat inventore corporis, nemo sed sit. Dolorum asperiores maiores nisi nostrum nobis eaque eius magnam. Aperiam incidunt dignissimos tempore officiis reiciendis enim aspernatur, sint fugit cumque ad facere unde natus ipsa possimus excepturi rem. Et enim assumenda nulla deleniti nesciunt ducimus alias ipsum provident beatae, dolorum ipsam dolore labore quibusdam inventore cum sit quod laborum maiores odio expedita a quo sapiente. Commodi provident odio libero. Consectetur illo veritatis repellendus iure ratione, magnam tempora, repellat alias natus esse aut. Hic, corporis rem ea eius blanditiis sequi suscipit vel obcaecati sunt est? Commodi.</div>            </br>
-            </br>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quaerat inventore corporis, nemo sed sit. Dolorum asperiores maiores nisi nostrum nobis eaque eius magnam. Aperiam incidunt dignissimos tempore officiis reiciendis enim aspernatur, sint fugit cumque ad facere unde natus ipsa possimus excepturi rem. Et enim assumenda nulla deleniti nesciunt ducimus alias ipsum provident beatae, dolorum ipsam dolore labore quibusdam inventore cum sit quod laborum maiores odio expedita a quo sapiente. Commodi provident odio libero. Consectetur illo veritatis repellendus iure ratione, magnam tempora, repellat alias natus esse aut. Hic, corporis rem ea eius blanditiis sequi suscipit vel obcaecati sunt est? Commodi.</div>
-            </section>
-
-            <div class='footerCopyright'>
-                <span>lofi.today</span>
-                <span>made in poland mmxx-mmxxii</span>
-                <span>by <a class='footerSocialLink' href='https://www.github.com/ddbrn'>@deadbrain</a></span>
-                
-              </div>
-        </div>
-
+      </div>
     </section>
-
-    <!-- <section></section> -->
-
-   <!-- <script src="main.js"></script> -->
-    
-</body>
+    <footer class="footerCopyright text-shadow">
+      <span>lofi.today</span>
+      <span>made in poland mmxx-mmxxiv</span>
+      <span>
+        by
+        <a class="footerSocialLink" href="https://github.com/deadbraindev"
+          >@deadbrain</a
+        >
+      </span>
+    </footer>
+  </body>
 </html>
