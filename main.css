@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;800&display=swap');
-
+@font-face {
+    font-family: "VCR-font";
+    src: url("fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf");
+}
 /* RESET CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Azeret Mono', monospace;
+    font-family: "VCR-font", Arial, sans-serif;
 
 }
 
@@ -13,9 +17,8 @@ a {
     text-decoration: none;
 }
 
-/* html {
-    scroll-behavior: smooth;
-} */
+
+
 
 h1,
 h2,
@@ -24,58 +27,7 @@ h4,
 h5 {
     font-weight: normal;
 }
-
-/* BOX */
-
-.box {
-    height: 200vh;
-    width: 100%;
-}
-
-.box-video {
-    height: 100%;
-    width: 60%;
-    position: fixed;
-    /* left: -20px; */
-    transform: translateX(-35%);
-    transition:  all 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000)
-}
-.box-video:hover,
-.box-video:active {
-    transform: translateX(-31%);
-}
-
-#video-content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
-.box-content {
-    float: right;
-    width: 62%;
-    height: 100%;
-    /* background-color: pink; */
-}
-
-header {
-    height: 60px;
-    /* color: aqua; */
-    /* background-color: bisque; */
-    /* background-color: red; */
-    position: fixed;
-    top: 3%;
-    left: 42%;
-    width: 100%;
-}
-
-/* brak tego gowna przy przeciaganiu chyba*/
-.link-video:hover,
-.link-video:active {
-    opacity: 100%;
-}
-
+/* RESET CSS */
 .text-shadow {
     color: rgb(255, 255, 255);
     text-shadow: 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0),
@@ -110,96 +62,59 @@ header {
         -3px -3px 0 rgb(0, 0, 0);
 
     font-size: 40px;
-}
+} 
 
-.text {
-    margin: 100px;
-    padding: 30px;
-    height: 90%;
-    /* border: 2px solid black; */
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 16px;
+    width: 100%;
 }
-
-.video-arrow {
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    font-family: "VCR-font", Arial, sans-serif;
-}
-
 .logo {
-    top: 3%;
-    left: 42%;
     font-family: "VCR-font", Arial, sans-serif;
+    margin-right: auto;
 }
-
-/* FONTS */
-
-@font-face {
-    font-family: "VCR-font";
-    src: url("fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf");
+.logo-dot {
+    margin-left: auto;
+    height: 40px;
+    width: 40px;
 }
-
-/* ANIMATIONS */
-
-/* @keyframes blinker {
-    30% {
-      opacity: 0;
-    }
-} */
-
-/* MEDIA */
-
-/* @media (min-width: 500px) {
-    * {
-        background-color: red;
-    }
-} */
-
-.rotate {
-    transform: rotate(-90deg);
-    z-index: 100;
-    float: left;
-    /* margin-bottom: 20px; */
+.box-content{
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
 }
-
-.test {
-    float: left;
-    padding-left: 20px;
+#video-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-
 .footerCopyright {
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: uppercase;
     padding: 40px 0 15px;
     display:flex;
     flex-direction: column;
     align-items: center;
     width:100%;
-  }
-  .footerCopyright span {
-    /* background-color: var(--color-background-dot-light); */
-    background-color: white;
+    position: fixed;
+    bottom: 0;
+
   }
   .footerSocialLink {
     text-decoration: none;
-    /* font-style:italic; */
     color: var(--color-main-font-dark);
     font-weight: bold;
     letter-spacing: 1px;
     text-transform:lowercase;
     border: 1px solid transparent;
     border-bottom: 1px solid black;
-    background-color: #ffce06;
     font-size: 1em;
     padding: 2px;
-    /* margin: 3px; */
   }
   .footerSocialLink:hover {
     border: 1px solid black;
   }
-  /* .footerSocialLink:focus {
-    outline: 3px solid var(--color-main-focus-blue);
-    color: var(--color-main-focus-blue);
-    font-weight: bold;
-  } */
