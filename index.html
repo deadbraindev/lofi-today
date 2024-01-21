@@ -5,49 +5,18 @@
     <meta name="author" content="deadbrain.dev" />
 
     <link rel="icon" href="images/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/apple-icon-152x152.png"
-    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/apple-icon-180x180.png"
+      href="/images/apple-icon-180.png"
     />
     <link
       rel="icon"
       type="image/png"
-      sizes="192x192"
-      href="/android-icon-192x192.png"
+      sizes="180x180"
+      href="/images/apple-icon-180.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <!-- <meta name="msapplication-TileColor" content="#ffffff"> -->
-    <!-- <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> -->
-    <!-- <meta name="theme-color" content="#ffffff"> -->
-
-    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-title" content="lofi.today" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today's Chill Session: Lofi and VHS Delight - lofi.today</title>
@@ -98,8 +67,17 @@
   </head>
   <body>
     <header>
-      <img class="logo-dot" src="images/favicon.png" />
-      <a class="logo text-shadow" href="https://lofi.today/">lofi.today</a>
+      <img
+        class="logo-dot"
+        src="images/favicon.png"
+        alt="lofitoday logo, blue dot"
+      />
+      <a
+        class="logo text-shadow"
+        href="https://lofi.today/"
+        aria-label="Navigate to the main page"
+        >lofi.today</a
+      >
     </header>
     <section class="box">
       <div class="box-content">
@@ -107,10 +85,11 @@
           class="link-video"
           href="https://www.youtube.com/channel/UCCao2pHfw0ZSua3VZKmthnw"
           target="_blank"
+          aria-label="Go to the YouTube channel"
         >
           <video
             id="video-content"
-            poster="images/poster-03.jpg"
+            poster="images/hero-poster.jpg"
             preload
             playsinline
             autoplay
@@ -127,7 +106,10 @@
       <span>made in poland mmxx-mmxxiv</span>
       <span>
         by
-        <a class="footerSocialLink" href="https://github.com/deadbraindev"
+        <a
+          class="footerSocialLink"
+          href="https://github.com/deadbraindev"
+          aria-label="Visit creator's GitHub profile"
           >@deadbrain</a
         >
       </span>
