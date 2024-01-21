@@ -8,17 +8,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Azeret Mono', monospace;
-    font-family: "VCR-font", Arial, sans-serif;
-
+    /* font-family: 'Azeret Mono', monospace; */
+    /* font-family: "VCR-font", Arial, sans-serif; */
+    font-family: 'VCR-font', 'Azeret Mono', Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
 }
-
-
-
 
 h1,
 h2,
@@ -74,7 +71,7 @@ header {
     width: 100%;
 }
 .logo {
-    font-family: "VCR-font", Arial, sans-serif;
+    /* font-family: "VCR-font", Arial, sans-serif; */
     margin-right: auto;
 }
 .logo-dot {
@@ -93,7 +90,7 @@ header {
     object-fit: cover;
 }
 .footerCopyright {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-transform: uppercase;
     padding: 40px 0 15px;
     display:flex;
@@ -112,7 +109,7 @@ header {
     text-transform:lowercase;
     border: 1px solid transparent;
     border-bottom: 1px solid black;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 2px;
   }
   .footerSocialLink:hover {
