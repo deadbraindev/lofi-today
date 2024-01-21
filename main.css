@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;800&display=swap');
 @font-face {
     font-family: "VCR-font";
-    src: url("fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf");
+    src: url("fonts/VCR_OSD_MONO.ttf");
 }
 /* RESET CSS */
 * {
