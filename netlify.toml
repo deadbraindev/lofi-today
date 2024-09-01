@@ -1,5 +1,6 @@
 [[redirects]]
-    from = "/*"
+    from = "https://lofitoday.netlify.app/"
     to = "https://lofi.deadbrain.dev/"
     status = 301
     force = true
+    
